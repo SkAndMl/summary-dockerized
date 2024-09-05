@@ -6,6 +6,7 @@
 - [Creating a TAR File](#creating-a-tar-file)
 - [Running Docker Image from a TAR File](#running-docker-image-from-a-tar-file)
 - [Specs](#specs)
+- [Test Results](#test-results)
 
 ## Model configuration
 - `sshleifer/distilbart-cnn-12-6` finetuned on dialoguesum is used for summarization
@@ -56,3 +57,8 @@ docker-compose up
     *  CPU: Apple M2
     *  RAM: 16GB
     *  Storage: 256GB
+
+## Test Results
+Average ROUGE-1 Score: 0.3162
+Average ROUGE-2 Score: 0.1113
+Average ROUGE-L Score: 0.2498
