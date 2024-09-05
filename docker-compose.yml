@@ -1,0 +1,9 @@
+services:
+  summarize:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./main.py:/app/main.py
+      - ./test.py:/app/test.py
+      - ./sshleifer_distilbart_cnn_12_6_dialoguesum:/app/sshleifer_distilbart_cnn_12_6_dialoguesum
